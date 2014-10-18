@@ -36,9 +36,12 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.branch = 'master'
+  end
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -48,10 +51,10 @@
 # end
 
 set :css_dir, 'stylesheets'
-
+set :images_dir, 'images'
 set :js_dir, 'javascripts'
 
-set :images_dir, 'images'
+set :slim, { format: :html5 }
 
 # Build-specific configuration
 configure :build do
