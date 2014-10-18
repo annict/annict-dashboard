@@ -7,7 +7,7 @@ $ middleman s
 ```
 
 
-### GitHub Pageにデプロイする
+### GitHub Pagesにデプロイする
 
 ```
 $ middleman build
