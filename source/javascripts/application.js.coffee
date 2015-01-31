@@ -12,8 +12,8 @@ Keen.ready ->
     filters: [
       { 'property_name': 'action', 'operator': 'eq', 'property_value': 'create' }
     ]
-  client.draw query, $('.js-graph-1')[0],
-    title: '新規ユーザ'
+  client.draw query, document.getElementById('js-graph-1'),
+    title: '新規登録者'
     width: 'auto'
 
 
@@ -25,8 +25,8 @@ Keen.ready ->
     filters: [
       { 'property_name': 'action', 'operator': 'eq', 'property_value': 'create' }
     ]
-  client.draw query, $('.js-graph-2')[0],
-    title: '週1回以上チェックインしているユーザ'
+  client.draw query, document.getElementById('js-graph-2'),
+    title: '週1回以上チェックインしている利用者'
     width: 'auto'
 
 
