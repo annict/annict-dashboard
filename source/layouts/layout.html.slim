@@ -2,7 +2,7 @@ doctype 5
 html lang='ja'
   head
     meta charset='utf-8'
-    title Annict::Dashboard
+    title Annict Dashboard
     link rel='canonical' href='http://dashboard.annict.com'
     link href='/favicon.png' rel='shortcut icon'
     = stylesheet_link_tag 'application'
@@ -10,8 +10,8 @@ html lang='ja'
   body class="#{page_classes}"
     nav.navbar.navbar-default role='navigation'
       .navbar-header
-        a.navbar-brand href='/' Annict::Dashboard
+        a.navbar-brand href='/' Annict Dashboard
     = yield
 
-    = javascript_include_tag 'https://d26b395fwzu5fz.cloudfront.net/3.2.2/keen.min.js'
+    = javascript_include_tag 'https://d26b395fwzu5fz.cloudfront.net/3.3.0/keen.min.js'
     = javascript_include_tag 'application'
