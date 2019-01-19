@@ -1,15 +1,15 @@
-# Annict::Dashboard
+# Annict Dashboard
 
-## ローカルで動かす
-
-```
-$ middleman s
-```
-
-
-### GitHub Pagesにデプロイする
+## Development setup
 
 ```
-$ middleman build
-$ middleman deploy
+$ docker-compose up
+```
+
+
+## Deployment
+
+```
+$ heroku container:push web -a annict-dashboard
+$ heroku container:release web -a annict-dashboard
 ```
